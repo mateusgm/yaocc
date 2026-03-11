@@ -8,7 +8,7 @@ Generate concise, outcome-focused product requirements documents through interac
 
 ## Phase 1: Clarify
 
-Before writing anything, have a short interactive conversation to understand what the user needs. Use multiple-choice questions to reduce friction — ask at most 2–3 questions per turn.
+Before writing anything, check out the current state of the project in the working directory to understand where we're starting off and have a short interactive conversation to understand what the user needs and help them refine the idea. Use multiple-choice questions to reduce friction — ask at most 2–3 questions per turn.
 
 **What you need to understand before drafting:**
 - What they are building and for whom
