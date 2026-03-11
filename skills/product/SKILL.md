@@ -15,10 +15,11 @@ Four templates are available in the `templates/` folder. Each encodes a differen
 
 | Template | File | Best for |
 |----------|------|----------|
-| **Cagan / SVPG** | `templates/cagan.md` | Lightweight opportunity assessment. 10 questions. Validates whether something is worth pursuing. |
-| **Reforge** | `templates/reforge.md` | Evolutionary PRD that grows in 3 stages: 1-pager → spec → full PRD. Matches the project lifecycle. |
-| **Amazon PR/FAQ** | `templates/amazon.md` | Working Backwards press release + FAQ. Forces customer-centric narrative before solution details. |
-| **Figma** | `templates/figma.md` | 3-section structure: Problem Alignment → Solution Alignment → Launch Readiness. Strong cross-functional handoff. |
+| **Standard** | `templates/standard.md` | When you need a straightforward, all-purpose PRD that takes a team from problem through user stories to requirements without prescribing a specific methodology |
+| **Cagan / SVPG** | `templates/cagan.md` | When you're not sure the opportunity is worth pursuing yet and need a lightweight way to pressure-test the idea before investing in design or engineering |
+| **Reforge** | `templates/reforge.md` | When the project will evolve over time and you want a document that starts as a 1-pager and grows into a full spec only as clarity increases |
+| **Amazon PR/FAQ** | `templates/amazon.md` | When you need to pitch a new product or initiative to leadership and want to force absolute clarity on customer value before discussing solutions |
+| **Figma** | `templates/figma.md` | When you're shipping a feature on an existing product and clear cross-functional alignment around problem, solution and release |
 
 ## Workflow
 
