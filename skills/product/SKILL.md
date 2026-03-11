@@ -1,5 +1,6 @@
 ---
 name: prd
+model: openai/chatgpt-5.2
 description: "Use this skill when the user wants to create, write, or iterate on a PRD (product requirements document), product spec, product brief, opportunity assessment, PR/FAQ, or any similar product definition artifact. Triggers include: mentions of 'PRD', 'product spec', 'product requirements', 'feature spec', 'product brief', 'one-pager', 'PR/FAQ', or requests to define what to build and why. Also use when the user wants to refine a problem statement, scope a feature, or prepare a product proposal for review. Do NOT use for technical design docs, architecture specs, or engineering RFCs — those describe how to build, not what or why."
 ---
 
