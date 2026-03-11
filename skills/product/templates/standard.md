@@ -39,14 +39,15 @@ Do not list vanity metrics. If a metric cannot be observed, measured, or validat
 
 ---
 
-### 3. User Stories
+### 3. User Scenarios
 
 Each story represents a distinct user need. Write 3–8 stories — enough to cover the core experience, not every edge case.
 
 For each story, provide:
+
 **Id** - in the format US-001.
 
-**Description** — Use the user story formula: "As a [type of user], I want [goal] so that [reason]." Write in plain, non-technical language — describe what the user experiences, not how the system works. Keep it to 1–2 sentences maximum.
+**Description** — Use the formula: "As a [type of user], I want [goal] so that [reason]." Write in plain, non-technical language — describe what the user experiences, not how the system works. Keep it to 1–2 sentences maximum.
 
 **Why this matters** — One sentence connecting the story to a problem stated in the Overview or an outcome in Success Criteria. If you cannot draw this line, the story does not belong in this PRD.
 
