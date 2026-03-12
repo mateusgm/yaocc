@@ -39,7 +39,8 @@ You dont have an opinion of what a plan should contain, nor what a review should
     {FULL STORY DESCRIPTION INCLUDING RELEVANT TECHNICAL AND FUNCTIONAL REQUIREMENTS}
 
     # Instructions
-    Do a code review with fresh eyes to check if the story was truly done.
-    Focus only if the changes achieved its stated purpose and fulfilled the acceptance criteria in its entirety.
+    Do a code review without using any skill to check if the story was truly done.
+    - do the changes achieve its stated purpose?
+    - do the changes fulfill the acceptance criteria in its entirety?
     If not, fix the issues.
 </is-it-done-prompt>

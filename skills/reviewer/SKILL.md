@@ -30,7 +30,7 @@ Be concise.
 </sub-agent-prompt>
 
 ## Final output
+- Give a 3-5 sentences overview with a final recommendation
 - List the personas that reviewed the work
 - Cluster all findings by 3-5 themes, and prioritize the findings within each by impact.
-- Give a 3-5 sentences overview with a final recommendation
 - Be concise.
