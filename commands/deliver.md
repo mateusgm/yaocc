@@ -28,7 +28,7 @@ Your job is to only orchestrate the work, not doing the work itself. You dont ha
 
 <is-it-done-prompt>
     # User story
-    {FULL STORY DESCRIPTION}
+    {FULL STORY DESCRIPTION INCLUDING RELEVANT TECHNICAL AND FUNCTIONAL REQUIREMENTS}
     # Instructions
     Do a code review with fresh eyes to check if the story was truly done.
     Focus only if the changes achieved its stated purpose and fulfilled the acceptance criteria in its entirety.
