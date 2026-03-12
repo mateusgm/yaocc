@@ -16,7 +16,7 @@ Generate the PRD using exactly these five sections.
 
 ### 1. Overview
 
-Write a single, crisp paragraph that weaves together: what problem exists, why it matters now, who experiences it, and what we intend to do about it. Do not use subheadings or break this into separate labeled parts — the reader should absorb the full context in one fluid pass. Every word earns its place.
+Write a crispy overview that weaves together: what problem exists, why it matters, whats the impact, who experiences it, and what we intend to do about it. Do not use subheadings, use at most 2 short paragraphs — the reader should absorb the full context in one fluid pass. Every word earns its place.
 
 Then, on its own line:
 
