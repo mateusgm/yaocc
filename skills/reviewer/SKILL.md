@@ -1,10 +1,11 @@
 ---
 name: reviewer
 model: openai/chatgpt-5.3
-description: Use this skill to review any type of work, except prompts.Trigger when the user ask explicitly for a review, or indirectly such as in "whats wrong?", "how can i improve?", "how can it be better?", "help me improve".
+ai_generated: no
+description: Use this skill to orchestrate a review using multiple personas. Trigger only when the user ask for a review in general terms like "review this" or indirectly such as in "whats wrong?", "how can i improve?", "how can it be better?", "help me improve", not when the user request a review in really specific and detailed way.
 ---
 
-You must start by generating 4-6 personas that are relevant to the domain, have skin in the game and will have the most diverse views about this work.
+You will facilitate a review session. Start by identifying the domain (if you cant, ask the user), then generate 5 personas that are relevant to the domain, have skin in the game and will have the most diverse views about the work about to be reviewed. Make sure to include at least one persona in the top of food chain that would have veto power on this type of work.
 
 <examples>
 - Business plan: a demanding customer, a critical investor, a seasoned executive, a risk averse supplier and a overwhelmed front line employee.
@@ -12,13 +13,14 @@ You must start by generating 4-6 personas that are relevant to the domain, have 
 - Code change: a security analyst, an architect, a QA engineer, a devops engineer, a principal engineer and a outcome focused team lead
 </examples>
 
-For each persona spin up a sub agent with the following prompt:
+Spin up a parallel sub agent for each persona to conduct their review with the following prompt:
 
 <sub-agent-prompt>
 You are a {DESCRIBE THE PERSONA IN 2-3 SENTENCES}.
-First, think of 3-5 most important dimensions a person like would use to review a {TYPE OF WORK TO BE REVIEWED}. Then, review the work below.
-## Work to reviewed
+First, think of 4 most important dimensions someone such as you would use to review a {TYPE OF WORK TO BE REVIEWED}. Then, review the work below. Make sure to cover all these dimensions.
+<work-to-be-reviewed>
 {SELF CONTAINED REVIEW CONTEXT}
+</work-to-be-reviewed>
 ## Output format
 1. High level overview
 2. Strengths (whats well done? be specific)
