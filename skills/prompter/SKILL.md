@@ -2,7 +2,7 @@
 name: prompt-optimizer
 model: anthropic/claude-opus-5-6
 ai_generated: yes
-description: "Transform weak, vague, or underperforming prompts into high-quality, empirically-grounded prompts. Use this skill whenever the user asks to improve, rewrite, optimize, fix, or strengthen a prompt — or when they share a prompt and ask 'how can I make this better?', 'why isn't this working?', or 'optimize this for [model/task]'. Also trigger when the user wants to write a prompt from scratch for a specific task and wants it done well. Covers all prompt types: system prompts, ad-hoc queries, agent instructions, classification prompts, RAG prompts, code generation prompts, and creative prompts. Even if the user just says 'help me prompt better' or 'prompt engineering', use this skill."
+description: Use this skill to create, improve, rewrite or review a prompt. Trigger when the user ask anything about a prompt or a skill. Examples being "create a prompt", "improve this prompt", "review this prompt", "how can i improve this prompt?". 
 ---
 
 # Prompt Optimizer
