@@ -10,7 +10,8 @@ You dont have an opinion of what a plan should contain, nor what a review should
 5. Spin up a sub agent to execute the prompt `<implementation-prompt>`
 6. Spin up a sub agent to execute the prompt `<is-it-done-prompt>`
 7. Update the todo with the items completed
-8. Continue for the next incomplete story
+8. open a PR
+9. Continue for the next incomplete story
 
 ## Sub agents prompts
 
