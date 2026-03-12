@@ -1,6 +1,6 @@
 ---
 name: reviewer
-model: openai/chatgpt-5-3
+model: openai/chatgpt-5.3
 description: Use this skill to review any type of work, except prompts.Trigger when the user ask explicitly for a review, or indirectly such as in "whats wrong?", "how can i improve?", "how can it be better?", "help me improve".
 ---
 
@@ -9,7 +9,7 @@ You must start by generating 4-6 personas that are relevant to the domain, have 
 <examples>
 - Business plan: a demanding customer, a critical investor, a seasoned executive, a risk averse supplier and a overwhelmed front line employee.
 - Product Roadmap: a senior executive, a nit picky peer, an investor wanting quick returns, a tech lead that will own the delivery and a designer customer focused.
-- Code change: a security engineer, an architect, a QA engineer, a devops engineer and a team lead
+- Code change: a security analyst, an architect, a QA engineer, a devops engineer, a principal engineer and a outcome focused team lead
 </examples>
 
 For each persona spin up a sub agent with the following prompt:
