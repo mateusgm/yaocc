@@ -28,11 +28,10 @@ Each templates encodes a different philosophy and suits different situations. Th
 
 | Template | File | Best for |
 |----------|------|----------|
-| **Standard** | `templates/standard.md` | When you need a straightforward, all-purpose PRD that takes a team from problem through user stories to requirements without prescribing a specific methodology |
-| **Cagan / SVPG** | `templates/cagan.md` | When you're not sure the opportunity is worth pursuing yet and need a lightweight way to pressure-test the idea before investing in design or engineering |
-| **Reforge** | `templates/reforge.md` | When the project will evolve over time and you want a document that starts as a 1-pager and grows into a full spec only as clarity increases |
-| **Amazon PR/FAQ** | `templates/amazon.md` | When you need to pitch a new product or initiative to leadership and want to force absolute clarity on customer value before discussing solutions |
-| **Figma** | `templates/figma.md` | When you're shipping a feature on an existing product and clear cross-functional alignment around problem, solution and release |
+| **Standard** | `templates/standard.md` | Incremental features / epics  |
+| **Figma** | `templates/figma.md` | New products / initiatives |
+| **Cagan / SVPG** | `templates/cagan.md` | Assessing if the opportunity is worth pursuing  |
+| **Amazon PR/FAQ** | `templates/amazon.md` | Pitches and crystal clear alignment on the north star |
 
 ## Phase 2: Draft
 
