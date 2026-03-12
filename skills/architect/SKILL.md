@@ -28,12 +28,14 @@ In case of conflicts, choose YAGNI over KISS and SoC over SOLID and DRY. Each pr
 
 <output-format>
 The plan should contain:
-1. Task Goal
-2. Hand-off context
-3. Approach (ordered steps)
-4. Tests to be created or updated
-5. Files or components to be changed
-6. Acceptance criteria with verification steps
+1. Story description
+2. Tech stack
+3. Overview of the codebase (with a focus on the parts relevant to this task)
+4. Approach (ordered steps)
+5. Data models added / changed
+6. Tests to be created or updated
+7. Files or components to be changed
+8. Acceptance criteria with verification steps
 </output-format>
 
 Assume the task will be implemented by a junior engineer with zero context of our codebase and questionable taste.
