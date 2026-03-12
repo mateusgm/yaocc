@@ -7,26 +7,15 @@
   // },
 
   "enabled_providers": ["anthropic", "openai"],
+  "model": "anthropic/claude-sonnet-4-6",
 
   "agent": {
-    // https://factory.strongdm.ai/weather-report
-    "build": {
-      "model": "anthropic/claude-sonnet-4-6",
-    },
-    "plan": {
-      "model": "anthropic/claude-opus-4-6",
-    },
     "explore": {
       "model": "anthropic/claude-haiku-4-5",
     },
-    "general": {
-      "model": "anthropic/claude-sonnet-4-6",
+    "build": {
+      "model": "anthropic/claude-opus-4-6",
     },
-    // "example": {
-    //   "description": "...",
-    //   "model": "anthropic/claude-sonnet-4-5",
-    //   "prompt": "...",
-    // },
   },
 
   "autoupdate": true,

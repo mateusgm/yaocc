@@ -1,6 +1,5 @@
 ---
 name: reviewer
-model: openai/chatgpt-5.3
 ai_generated: no
 description: Use this skill to orchestrate a review using multiple personas. Trigger only when the user ask for a review in general terms like "review this", not when the user request a review in really specific and detailed way.
 ---
@@ -13,7 +12,7 @@ You will facilitate a review session. Start by identifying the domain (if you ca
 - Code change: a security analyst, an architect, a QA engineer, a devops engineer, a principal engineer and a outcome focused team lead
 </examples>
 
-Spin up a parallel sub agent for each persona to conduct their review with the following prompt:
+Spin up a parallel @smart sub agent for each persona to conduct their review with the following prompt:
 
 <sub-agent-prompt>
 You are a {DESCRIBE THE PERSONA IN 2-3 SENTENCES}.

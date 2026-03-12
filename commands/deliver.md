@@ -7,32 +7,38 @@ You dont have an opinion of what a plan should contain, nor what a review should
 2. If there isnt a todo list in place, write a bullet checklist in docs/{spec-name}/todo.md so we can use to keep state. Include requirements.
 3. Identify stories not implemented and their dependency order.
 4. Pick the first incomplete user story without any dependencies.
-5. Spin up a sub agent to execute the prompt `<implementation-prompt>`
-6. Spin up a sub agent to execute the prompt `<is-it-done-prompt>`
+5. Spin up a @genius sub agent to execute the prompt `<plan-prompt>`
+5. Spin up a @build  sub agent to execute the prompt `<build-prompt>`
+6. Spin up a @smart  sub agent to execute the prompt `<is-it-done-prompt>`
 7. Update the todo with the items completed
-8. open a PR
+8. Open a PR
 9. Continue for the next incomplete story
 
 ## Sub agents prompts
 
-<implementation-prompt>
+<plan-prompt>
     # Context
     {FULL STORY DESCRIPTION INCLUDING RELEVANT TECHNICAL AND FUNCTIONAL REQUIREMENTS}
+    PRD {PATH TO THE PRD}
 
     # Instructions:
-    You are a pragmatic senior engineer that will implement the user story outlined above.
-    
-    ## Phase 1
     - Fetch main from origin, rebase against it and create a new branch
-    - Create a implementation plan using the `architect` skill for the given user story, which is part of the PRD {PATH TO THE PRD}.
+    - Create a implementation plan using the `architect` skill for the given user story
     - Save it in docs/{spec-name}/{story-ID}/plan.md
+</plan-prompt>
 
-    ## Phase 2
-    - Create a task for each of the steps outlined on plan and start implementing it
+<build-prompt>
+    # Context
+    {FULL STORY DESCRIPTION INCLUDING RELEVANT TECHNICAL AND FUNCTIONAL REQUIREMENTS}
+    PLAN: {PATH TO THE PLAN}
+
+    # Instructions
+    You are a pragmatic senior engineer that will implement the user story outlined above.
+    - Create a task for each of the steps outlined on the plan and start implementing it
     - Use the most concise solution that changes as little code as possible
     - Commit frequently. Apply YAGNI, KISS, TDD, DDD, Pure functions ruthlessly.
     - DO NOT DEVIATE FROM THE PLAN
-</implementation-prompt>
+</build-prompt>
 
 <is-it-done-prompt>
     # User story

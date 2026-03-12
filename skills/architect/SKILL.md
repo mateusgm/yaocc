@@ -1,6 +1,5 @@
 ---
 name: architect
-model: anthropic/claude-opus-4-6
 ai_generated: no
 description: This skill guides the creation of a production-grade & requirement-complete solution design. Uses it when a solution design, implementation breakdown or implementation plan is needed. 
 ---

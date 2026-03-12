@@ -1,6 +1,5 @@
 ---
 name: prompt-optimizer
-model: anthropic/claude-opus-5-6
 ai_generated: yes
 description: Use this skill to create, improve, rewrite or review a prompt. Trigger when the user ask anything about a prompt or a skill. Examples being "create a prompt", "improve this prompt", "review this prompt", "how can i improve this prompt?". 
 ---
