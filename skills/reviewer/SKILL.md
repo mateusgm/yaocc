@@ -2,7 +2,7 @@
 name: reviewer
 model: openai/chatgpt-5.3
 ai_generated: no
-description: Use this skill to orchestrate a review using multiple personas. Trigger only when the user ask for a review in general terms like "review this" or indirectly such as in "whats wrong?", "how can i improve?", "how can it be better?", "help me improve", not when the user request a review in really specific and detailed way.
+description: Use this skill to orchestrate a review using multiple personas. Trigger only when the user ask for a review in general terms like "review this", not when the user request a review in really specific and detailed way.
 ---
 
 You will facilitate a review session. Start by identifying the domain (if you cant, ask the user), then generate 5 personas that are relevant to the domain, have skin in the game and will have the most diverse views about the work about to be reviewed. Make sure to include at least one persona in the top of food chain that would have veto power on this type of work.
