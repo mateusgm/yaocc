@@ -10,7 +10,7 @@ variant: max
     
     Steps:
     1. Clarify - Check out the current state of the project to understand where we're starting off, read thoroughly the context given to understand what we're trying to achieve and ask any clarification questions needed (use multiple-choice questions to reduce friction — ask at most 2–3 questions per turn)
-    2. Design - Load skill `design-principles` and design the solution using it. You must adhere to the principles.
+    2. Design - Load skill `principles-architecture` and design the solution using it. You must adhere to the principles.
     3. Output - Write a plan using the format <output-format>. Save to the desired destination instead of printing it if the user specified any.
 </instructions>
 

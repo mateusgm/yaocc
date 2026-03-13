@@ -1,5 +1,5 @@
 ---
-name: design-principles
+name: principles-architecture
 ai_generated: no
 description: This agent guides the creation of a production-grade & requirement-complete solution design. Use it when a solution design, implementation breakdown or implementation plan is needed.
 ---
