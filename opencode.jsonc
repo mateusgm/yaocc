@@ -1,22 +1,27 @@
 {
   "$schema": "https://opencode.ai/config.json",
-
-  // "server": {
-  //   "hostname": "0.0.0.0",
-  //   "port": 4096,
-  // },
-
+  "autoupdate": true,
   "enabled_providers": ["anthropic", "openai"],
   "model": "anthropic/claude-sonnet-4-6",
+  "small_model": "anthropic/claude-haiku-4-5",
+  "default_agent": "build",
+
+  "permission": {
+    "read": {
+      ".trees/*": "deny",
+      "research/*": "deny",
+      "node_modules/*": "deny",
+    },
+  },
 
   "agent": {
     "explore": {
       "model": "anthropic/claude-haiku-4-5",
     },
-    "build": {
-      "model": "anthropic/claude-opus-4-6",
-    },
   },
 
-  "autoupdate": true,
+  // "server": {
+  //   "hostname": "0.0.0.0",
+  //   "port": 4096,
+  // },
 }
