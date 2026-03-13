@@ -12,8 +12,7 @@ $ARGUMENTS
 5. Delegate @build     to execute the prompt `<code-prompt>`. DO NOT GIVE ADDITIONAL CONTEXT OR INSTRUCTIONS.
 6. Delegate @profiles/smart to execute the prompt `<is-it-done-prompt>`. DO NOT GIVE ADDITIONAL CONTEXT OR INSTRUCTIONS.
 7. Update the todo with the items completed
-8. Open a PR
-9. Continue for the next incomplete story
+8. Continue to the next incomplete story
 
 ## Sub agents prompts
 
@@ -25,15 +24,23 @@ $ARGUMENTS
 </plan-prompt>
 
 <code-prompt>
-    Plan: {PATH TO THE PLAN}
+    Implementation Plan: {PATH TO THE PLAN}
 
     # Instructions
     You are a pragmatic senior engineer that will implement a story.
     1. Fetch main from origin, rebase against it 
-    2. Implement it in a new branch following the plan
-    - Use the most concise solution that changes as little code as possible
-    - Commit frequently. Apply ruthlessly YAGNI, KISS, TDD, DDD and Pure functions.
-    - DO NOT DEVIATE FROM THE PLAN.
+    2. Implement it in a new branch following the plan:
+      - Use the most concise solution that changes as little code as possible
+      - Commit frequently. Apply ruthlessly YAGNI, KISS, TDD, DDD and Pure functions.
+      - Follow the implementation plan exactly. Nothing more, nothing less.
+    3. Open a PR with:
+      - Scope: extracted user story with technical and functional requirements
+      - Implementation: short description of the implementation in plain-language. You might include high-level flow, key decisions, tradeoffs, critical areas, etc.
+      - How to Test: clear, step-by-step instructions on how to verify the change locally, including test data or flags
+      - Visuals: if the change involves UI changes, include before/after screenshots
+      - Keep it short and scannable
+
+    DO NOT DEVIATE FROM THE IMPLEMENTATION PLAN. 
 </code-prompt>
 
 
